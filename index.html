@@ -1,137 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elipse Interiors | Interior Designer in Moradabad</title>
-
-<style>
-body{margin:0;font-family:Segoe UI,Arial;background:#f4f4f4;color:#333}
-header{background:#111;color:#fff;padding:25px;text-align:center;position:relative}
-nav{background:#222;text-align:center;padding:10px}
-nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:600}
-nav a:hover{color:#f2b705}
-.lang-btn{position:absolute;top:20px;right:20px;background:#f2b705;color:#000;
-padding:6px 12px;border-radius:5px;cursor:pointer;font-weight:bold}
-section{max-width:1100px;margin:auto;padding:40px 20px}
-h2{text-align:center;margin-bottom:25px}
-.cards,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card,.img-box{background:#fff;padding:20px;border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-.img-box{text-align:center;font-weight:bold}
-form{max-width:500px;margin:auto}
-input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:6px;border:1px solid #ccc}
-button{background:#111;color:#fff;padding:12px;width:100%;border:none;
-border-radius:6px;font-size:16px;cursor:pointer}
-button:hover{background:#333}
-.contact{background:#111;color:#fff;text-align:center;padding:35px}
-.contact a{color:#f2b705;text-decoration:none;font-size:18px}
-footer{background:#000;color:#aaa;text-align:center;padding:12px}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;
-padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:bold}
-</style>
-
-<script>
-function changeLang(lang){
-document.getElementById("en").style.display = lang==="en"?"block":"none";
-document.getElementById("hi").style.display = lang==="hi"?"block":"none";
-}
-</script>
+    <meta charset="UTF-8">
+    <title>Elipse Interiors | Interior Design & Furniture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #1f2933;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #1f2933;
+        }
+        .services li {
+            margin: 8px 0;
+        }
+        footer {
+            background: #1f2933;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-
-<body onload="changeLang('en')">
+<body>
 
 <header>
-<h1>Elipse Interiors</h1>
-<p>Interior Design & Furniture Production</p>
-<div class="lang-btn" onclick="changeLang('hi')">हिंदी</div>
-<div class="lang-btn" style="right:90px" onclick="changeLang('en')">English</div>
+    <h1>Elipse Interiors</h1>
+    <p>Interior Design & Furniture Production</p>
 </header>
 
 <nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#inquiry">Inquiry</a>
-<a href="#contact">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<!-- ENGLISH -->
-<div id="en">
+<section id="home">
+    <h2>Welcome | स्वागत है</h2>
+    <p>
+        Welcome to <b>Elipse Interiors</b>.  
+        We provide professional interior design and custom furniture solutions.
+    </p>
+    <p>
+        <b>Elipse Interiors</b> में आपका स्वागत है।  
+        हम इंटीरियर डिज़ाइन और कस्टम फर्नीचर की प्रोफेशनल सेवाएं देते हैं।
+    </p>
+</section>
+
 <section id="about">
-<h2>About Us</h2>
-<p>
-Elipse Interiors is a professional interior design and furniture manufacturing company
-located near Moradabad. We deliver modern, customized and durable interior solutions
-for residential and commercial spaces.
-</p>
+    <h2>About Us | हमारे बारे में</h2>
+    <p>
+        Elipse Interiors is based near Moradabad.  
+        We specialize in residential and commercial interior design with high-quality furniture production.
+    </p>
+    <p>
+        Elipse Interiors मोरादाबाद के पास स्थित है।  
+        हम घर और कमर्शियल इंटीरियर डिज़ाइन के साथ उच्च गुणवत्ता का फर्नीचर तैयार करते हैं।
+    </p>
 </section>
 
 <section id="services">
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card"><h3>Interior Design</h3><p>Home, office & commercial interiors.</p></div>
-<div class="card"><h3>Furniture Manufacturing</h3><p>Custom premium furniture.</p></div>
-<div class="card"><h3>Modular Kitchen</h3><p>Modern & space-saving kitchens.</p></div>
-<div class="card"><h3>False Ceiling</h3><p>Ceiling & lighting solutions.</p></div>
-</div>
+    <h2>Our Services | हमारी सेवाएं</h2>
+    <ul class="services">
+        <li>Home Interior Design | होम इंटीरियर डिज़ाइन</li>
+        <li>Office & Shop Interior | ऑफिस और शॉप इंटीरियर</li>
+        <li>Modular Kitchen | मॉड्यूलर किचन</li>
+        <li>Custom Furniture Manufacturing | कस्टम फर्नीचर निर्माण</li>
+        <li>Wardrobe & Wood Work | वार्डरोब और वुड वर्क</li>
+    </ul>
 </section>
 
-<section id="gallery">
-<h2>Project Gallery</h2>
-<div class="gallery">
-<div class="img-box">Living Room Project</div>
-<div class="img-box">Bedroom Interior</div>
-<div class="img-box">Modular Kitchen</div>
-<div class="img-box">Office Interior</div>
-</div>
+<section id="contact">
+    <h2>Contact Us | संपर्क करें</h2>
+    <p><b>Phone / WhatsApp:</b> 9927114692</p>
+    <p><b>Location:</b> Near Moradabad (Google Maps: Elipse Interiors)</p>
+    <a class="btn" href="https://wa.me/919927114692" target="_blank">
+        Chat on WhatsApp
+    </a>
 </section>
-
-<section id="inquiry">
-<h2>Get a Free Consultation</h2>
-<form action="https://wa.me/919927114692" method="get">
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Phone Number" required>
-<textarea placeholder="Your Requirement"></textarea>
-<button type="submit">Send Inquiry</button>
-</form>
-</section>
-</div>
-
-<!-- HINDI -->
-<div id="hi">
-<section>
-<h2>हमारे बारे में</h2>
-<p>
-Elipse Interiors मोरादाबाद के पास स्थित एक प्रोफेशनल इंटीरियर डिजाइन और फर्नीचर
-मैन्युफैक्चरिंग कंपनी है।
-</p>
-</section>
-
-<section>
-<h2>प्रोजेक्ट गैलरी</h2>
-<div class="gallery">
-<div class="img-box">लिविंग रूम</div>
-<div class="img-box">बेडरूम</div>
-<div class="img-box">किचन</div>
-<div class="img-box">ऑफिस</div>
-</div>
-</section>
-</div>
-
-<section id="contact" class="contact">
-<h2>Contact</h2>
-<p>
-📞 <a href="tel:9927114692">9927114692</a><br><br>
-💬 <a href="https://wa.me/919927114692">WhatsApp Chat</a><br><br>
-📍 Moradabad (Google Maps Registered)
-</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/919927114692">WhatsApp</a>
 
 <footer>
-© 2026 Elipse Interiors | Moradabad
+    <p>© 2026 Elipse Interiors. All Rights Reserved.</p>
 </footer>
 
 </body>
