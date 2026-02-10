@@ -5,11 +5,13 @@
 <title>Elipse Interiors | Luxury Interior & Furniture</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Luxury Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
 :root{
-    --bg-dark:#0f172a;
+    --bg-dark:#0b0f1a;
     --bg-section:#111827;
-    --gold:#d4af37;
     --text-light:#e5e7eb;
     --text-muted:#9ca3af;
 }
@@ -18,16 +20,52 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body{
     background:var(--bg-dark);
     color:var(--text-light);
-    line-height:1.6;
+    font-family:'Poppins', sans-serif;
+    line-height:1.7;
 }
 
-/* HEADER */
+/* REFLECTIVE GOLD TEXT */
+.gold-text{
+    background: linear-gradient(
+        120deg,
+        #b08d57 0%,
+        #f5e6b8 25%,
+        #d4af37 45%,
+        #fff3c4 60%,
+        #b08d57 100%
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* NAV */
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(2,6,23,.9);
+    backdrop-filter:blur(10px);
+    padding:16px;
+    text-align:center;
+    z-index:10;
+}
+
+nav a{
+    color:var(--text-light);
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#f5e6b8;
+}
+
+/* HERO */
 header{
     min-height:90vh;
     display:flex;
@@ -36,112 +74,104 @@ header{
     text-align:center;
     padding:40px 20px;
     background:
-      linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+      linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
       url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
     background-size:cover;
     background-position:center;
 }
 
 header h1{
-    font-size:3rem;
-    color:var(--gold);
+    font-family:'Playfair Display', serif;
+    font-size:3.5rem;
     letter-spacing:2px;
 }
 
 header p{
-    margin-top:15px;
-    font-size:1.2rem;
-    color:var(--text-light);
-}
-
-/* NAV */
-nav{
-    position:sticky;
-    top:0;
-    background:#020617;
-    padding:15px;
-    text-align:center;
-    z-index:10;
-}
-
-nav a{
-    color:var(--text-light);
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:600;
-}
-
-nav a:hover{
-    color:var(--gold);
+    margin-top:18px;
+    font-size:1.15rem;
+    color:#e5e7eb;
 }
 
 /* SECTIONS */
 section{
     max-width:1100px;
-    margin:60px auto;
+    margin:70px auto;
     padding:0 20px;
 }
 
 section h2{
-    color:var(--gold);
-    margin-bottom:20px;
-    font-size:2rem;
+    font-family:'Playfair Display', serif;
+    font-size:2.2rem;
+    margin-bottom:22px;
 }
 
 section p{
     color:var(--text-muted);
-    margin-bottom:15px;
+    margin-bottom:14px;
 }
 
 /* SERVICES */
 .services{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
 .service-box{
-    background:var(--bg-section);
-    padding:25px;
-    border-radius:12px;
-    transition:.3s;
+    background:linear-gradient(180deg,#0f172a,#020617);
+    padding:30px;
+    border-radius:16px;
+    transition:.4s;
+    border:1px solid rgba(212,175,55,.15);
 }
 
 .service-box:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 30px rgba(0,0,0,.5);
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
 
 .service-box h3{
-    color:var(--gold);
     margin-bottom:10px;
 }
 
 /* CONTACT */
 .contact-box{
-    background:var(--bg-section);
-    padding:30px;
-    border-radius:15px;
+    background:linear-gradient(180deg,#0f172a,#020617);
+    padding:40px;
+    border-radius:20px;
     text-align:center;
+    border:1px solid rgba(212,175,55,.2);
 }
 
 .contact-box a{
     display:inline-block;
-    margin-top:20px;
-    padding:14px 28px;
-    background:var(--gold);
-    color:#000;
+    margin-top:25px;
+    padding:14px 34px;
+    font-weight:600;
     text-decoration:none;
-    font-weight:700;
-    border-radius:30px;
+    border-radius:40px;
+    background:linear-gradient(
+        120deg,
+        #b08d57,
+        #f5e6b8,
+        #d4af37,
+        #fff3c4
+    );
+    color:#000;
+    transition:.3s;
+}
+
+.contact-box a:hover{
+    transform:scale(1.05);
 }
 
 /* FOOTER */
 footer{
     background:#020617;
     text-align:center;
-    padding:20px;
+    padding:22px;
     color:var(--text-muted);
+    font-size:.9rem;
 }
 </style>
 </head>
@@ -156,54 +186,52 @@ footer{
 
 <header>
     <div>
-        <h1>ELIPSE INTERIORS</h1>
+        <h1 class="gold-text">ELIPSE INTERIORS</h1>
         <p>Luxury Interior Design & Premium Furniture</p>
-        <p>मॉडर्न • एलिगेंट • लग्ज़री इंटीरियर सॉल्यूशंस</p>
+        <p>मॉडर्न • एलिगेंट • रिफ्लेक्टिव लग्ज़री इंटीरियर</p>
     </div>
 </header>
 
 <section id="about">
-    <h2>About Us | हमारे बारे में</h2>
+    <h2 class="gold-text">About Us</h2>
     <p>
-        Elipse Interiors is a premium interior design & furniture studio near Moradabad.
-        We create elegant living and commercial spaces with luxury finishing.
+        Elipse Interiors is a premium interior design & furniture studio near Moradabad,
+        known for elegant spaces and luxury finishing.
     </p>
     <p>
         Elipse Interiors मोरादाबाद के पास स्थित एक प्रीमियम इंटीरियर और फर्नीचर स्टूडियो है,
-        जहाँ हम लग्ज़री और क्लास के साथ स्पेस डिज़ाइन करते हैं।
+        जो रिफ्लेक्टिव लग्ज़री और क्लास पर काम करता है।
     </p>
 </section>
 
 <section id="services">
-    <h2>Our Services | हमारी सेवाएं</h2>
+    <h2 class="gold-text">Our Services</h2>
     <div class="services">
         <div class="service-box">
-            <h3>Luxury Home Interior</h3>
-            <p>High-end residential interior design.</p>
+            <h3 class="gold-text">Luxury Home Interior</h3>
+            <p>High-end residential interiors with premium materials.</p>
         </div>
         <div class="service-box">
-            <h3>Office & Commercial</h3>
-            <p>Premium office, shop & showroom interiors.</p>
+            <h3 class="gold-text">Office & Commercial</h3>
+            <p>Elegant offices, shops & showroom designs.</p>
         </div>
         <div class="service-box">
-            <h3>Custom Furniture</h3>
-            <p>Bespoke furniture manufacturing with top quality.</p>
+            <h3 class="gold-text">Custom Furniture</h3>
+            <p>Bespoke furniture crafted with precision.</p>
         </div>
         <div class="service-box">
-            <h3>Modular Kitchen & Wardrobe</h3>
-            <p>Modern kitchen & wardrobe solutions.</p>
+            <h3 class="gold-text">Modular Kitchen</h3>
+            <p>Modern kitchens with luxury finishes.</p>
         </div>
     </div>
 </section>
 
 <section id="contact">
-    <h2>Contact | संपर्क</h2>
+    <h2 class="gold-text">Contact</h2>
     <div class="contact-box">
         <p><b>Phone / WhatsApp:</b> 9927114692</p>
         <p><b>Location:</b> Near Moradabad (Elipse Interiors – Google Maps)</p>
-        <a href="https://wa.me/919927114692" target="_blank">
-            WhatsApp Now
-        </a>
+        <a href="https://wa.me/919927114692" target="_blank">WhatsApp Now</a>
     </div>
 </section>
 
